@@ -11,7 +11,7 @@
   <title>eCorpus - Visite de Lascaux en 3D : Une visite en ligne de la plus célèbre grotte peinte de France - holusion.com</title><meta name="description" content="Une visite en ligne de la plus célèbre grotte peinte de France" />
     <meta property="og:description" content="Une visite en ligne de la plus célèbre grotte peinte de France"/><meta name="twitter:image"  content="/assets/img/posts/2024_lascaux/lascaux-800-ecaefa7e1.jpg">
       <meta name="og:image"  content="/assets/img/posts/2024_lascaux/lascaux-800-ecaefa7e1.jpg"><meta property="og:type" content="website"/><meta property="og:locale" content="en"/><link rel="canonical" href="http://0.0.0.0:4000/en/posts/2024-05-14-lascaux3D"><link rel="alternate" hreflang="fr" href="http://0.0.0.0:4000/fr/posts/2024-05-14-lascaux3D">
-  <link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/en/posts/2024-05-14-lascaux3D"><!-- CSS Loading -->
+ <link rel="alternate" hreflang="fr" href="https://thibaultguillaumont.github.io/lascaux3d/2024-05-14-lascaux3D_EN"><!-- CSS Loading -->
   <link href="css/style.css" rel="stylesheet">
 
   <script defer="" src="bootstrap.bundle.min.js"></script>
@@ -81,8 +81,7 @@
 </nav>
 
   <!-- Page Content -->
-    <script async src="https://man.ecorpus.holusion.com/dist/js/voyager-explorer.js"></script>
-
+      <script async src="https://archeologie.ecorpus.eu/dist/js/voyager-explorer.js"></script>
 <style>
   body {
     background: #a9642f;
@@ -111,7 +110,7 @@
     <div class="media">
       <div class="d-flex sticky-top flex-column justify-content-center" style="height: calc(100vh - 3rem)">
         <div class="">
-          <voyager-explorer id="Lascaux" lang="EN" resourceRoot="https://man.ecorpus.holusion.com/dist/" root='https://man.ecorpus.holusion.com/scenes/Lascaux_API/' document='scene.svx.json'></voyager-explorer>
+          <voyager-explorer id="Lascaux" lang="EN" resourceRoot="https://archeologie.ecorpus.eu/dist/" root='https://archeologie.ecorpus.eu/scenes/Grotte%20de%20Lascaux%20LOD/' document='scene.svx.json'></voyager-explorer>
         </div>
       </div>
     </div>
@@ -479,7 +478,7 @@
           if (entry.isIntersecting) {
             const step = entry.target.dataset.step;
             console.log(step);
-            voyagerElement.setTourStep(0, step, true);
+            voyagerElement.setTourStep(1, step, true);
           }
         });
       }, {
