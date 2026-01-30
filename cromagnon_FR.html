@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Holusion">
+  <link rel="publisher" href="https://plus.google.com/118076369091699793802"/>
+
+  <title>eCorpus - Visite Abri Cro-Magnon : Visite en ligne du site archéologique - holusion.com</title><meta name="description" content="Visite Abri Cro-Magnon" />
+    <meta property="og:description" content="Visite Abri Cro-Magnon"/><meta name="twitter:image">
+      <meta name="og:image"  content="/assets/img/posts/2024_lascaux/lascaux-800-ecaefa7e1.jpg"><meta property="og:type" content="website"/><meta property="og:locale" content="fr"/><link rel="canonical" href="http://0.0.0.0:4000/fr/posts/2024-05-14-lascaux3D"><link rel="alternate" hreflang="en" href="http://0.0.0.0:4000/en/posts/2024-05-14-lascaux3D">
+  <link rel="alternate" hreflang="fr" href="https://thibaultguillaumont.github.io/lascaux3d/2024-05-14-lascaux3D_FR"><!-- CSS Loading -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <script defer="" src="bootstrap.bundle.min.js"></script>
+
+  
+<!--FAVICONS for all formats -->
+<link rel="apple-touch-icon" sizes="57x57" href="/static/img/icons/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/static/img/icons/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/static/img/icons/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/static/img/icons/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/static/img/icons/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/static/img/icons/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/static/img/icons/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/static/img/icons/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/static/img/icons/favicons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/static/img/icons/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/img/icons/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/static/img/icons/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/static/img/icons/favicons/favicon-16x16.png">
+<link rel="manifest" href="/static/img/icons/favicons//manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/static/img/icons/favicons//ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+  
+
+
+</head>
+<body>
+
+  <!-- Jumbotron Header -->
+  <nav class="navbar navbar-expand-md navbar-dark" role="navigation">
+    <div class="container" style="background: #a9642f">
+        <!-- Brand and toggle get grouped for better mobile display -->
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-1" aria-expanded="false">
+        <span class="visually-hidden">Toggle navigation</span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        <ul class="nav navbar-nav me-auto" role="menu">
+          
+        </ul>
+        <ul class="nav navbar-nav" role="menu">
+          
+<li class="nav-item dropdown" >
+  <a href="" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false">
+    fr
+    <span class="caret"></span>
+    <span class="visually-hidden">(change language)</span>
+  </a>
+  <div class="dropdown-menu dropdown-menu-right language-picker" role="menu">
+    <a class="dropdown-item" href="cromagnon_FR.html" onclick="change_preferred_language('fr')" >
+      fr
+    </a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="cromagnon_EN.html" onclick="change_preferred_language('en')">
+      en
+    </a>
+  </div>
+</li>
+
+
+        </ul>
+      </div>
+    </div>
+    <!-- /.container -->
+</nav>
+
+  <!-- Page Content -->
+    <script async src="https://archeologie.ecorpus.eu/dist/js/voyager-explorer.js"></script>
+
+<style>
+  body {
+    background: #a9642f;
+    padding-top: 0px;
+  }
+  
+  .content [data-step] {
+    min-height:55vh;
+    padding-bottom: 10vh;
+    font-family: "Marianne", "Arial", sans-serif, Arial, Helvetica, sans-serif;
+    
+  }
+  .content h2 {
+    color : #a9642f;
+    font-family: "Marianne", "Times New Roman", serif;
+    font-weight: bold;
+  }
+
+  .main-dark {
+    background : #1a1715;
+  }
+
+  @keyframes spin { 100% { transform:rotate(360deg); } }
+  .spinner {
+    width: 50vh;
+    height: 50vh;
+    animation:spin 5s linear infinite;
+  }
+</style>
+
+<main class="main-dark main-grid">
+  <section class="section">
+    <div class="media">
+      <div class="d-flex sticky-top flex-column justify-content-center" style="height: calc(100vh)">
+        <div class="">
+          <voyager-explorer id="Lascaux" lang="FR" resourceRoot="https://archeologie.ecorpus.eu/dist/" root='https://archeologie.ecorpus.eu/scenes/Abri%20Cro-Magnon/' document='scene.svx.json' uiMode="logo"></voyager-explorer>
+        </div>
+      </div>
+    </div>
+
+    <div class="content position-relative">
+      <div id="loader" class="position-absolute pt-4" style="inset: 0;background-color:rgba(0, 0, 0, 0.1); backdrop-filter: blur(1px);">
+        <div class="sticky-top d-flex justify-content-center" style="width:100%;height:100%">
+          <svg class="spinner" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+            <style>
+              .c1{
+                fill:none;
+                fill-opacity:1;
+                stroke:#00517d;
+                stroke-width:6;
+                stroke-miterlimit:4;
+                stroke-linecap:round;
+                stroke-dasharray:56.5;
+                stroke-dashoffset:0;
+                stroke-opacity:1;
+              }
+              .c2{
+                fill:none;
+                fill-opacity:1;
+                stroke:#ffffff;
+                stroke-width:6;
+                stroke-opacity:1;
+              }
+            </style>
+          
+            <g >
+              <circle class="c1" cx="50" cy="50" r="36" />
+              <circle class="c2" cx="50" cy="50" r="44" />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div data-step="0" class='text-center' style="height: 80vh">
+        <a href="https://archeologie.culture.gouv.fr/lascaux/fr"><h3>Collection Grand sites archéologiques</h3></a>
+        <h2 style="margin-top: 100px;margin-bottom:50px;font-size: 300%;">l'Abri Cro-Magnon</h2>
+
+        <p>
+         <strong >
+         1868 - Découverte de l'Homme de Cro-Magnon
+         </strong>
+        </p>
+        <p>
+         L'Homme de Cro-Magnon est à l'origine le nom donné à un ensemble de restes fossiles d'Homo sapiens découverts en 1868 par Louis Lartet sur le site de l'abri de Cro-Magnon, aux Eyzies-de-Tayac, en Dordogne, en France, lieu auquel il doit son nom (cros voulant dire « creux » en occitan).
+        </p>
+
+    </div>
+    <div data-step="1" class='text-center' style="height: 80vh;margin-top:10vh">
+      <p> 
+        C'est la première fois que l'Homme moderne est ainsi identifié par des restes fossiles.
+      </p>
+       <img class="img-fluid" src="cromagnon/caracteres_anatomiquement_modernes.jpg">
+      </div>
+    
+    <div data-step="2" class='text-center' style="height: 80vh;margin-top:10vh">
+        <p>
+          
+        </p>
+        <img class="img-fluid" src="cromagnon/Cro-Magnon-female_Skull.png">
+        <figcaption>Gravure d'un crâne de Cro-Magnon extrait de <i>Die ersten Menschen und die prähistorischen Zeiten mit besonderer Berücksichtigung der Ureinwohner Amerikas</i>, Stuttgart 1884</figcaption>
+    </div>
+  
+    
+      <div data-step="3" class='text-center' style="height: 80vh;margin-top:10vh">
+        <p>
+          Le site a aujourd'hui l'air bien vide. L'abri ayant été vidé et son matériel éparpillé, son importance archéologique mondiale sera reconnue plus tardivement.</p>
+          <p>Il est classé au titre des monuments historiques le 9 janvier 1957. Depuis 1979, il est inscrit au Patrimoine mondial de l'Unesco, en association avec d'autres sites et grottes ornées de la région sous le nom de « sites préhistoriques et grottes ornées de la vallée de la Vézère ».
+        </p>
+        <img class="img-fluid" src="cromagnon/Abri_de_Cro-Magnon_-_Unesco.jpg">
+        <figcaption>Plaque UNESCO de l'Abri Cro-Magnon</figcaption>
+
+      </div>
+
+
+      <div data-step="4" class='text-center' style="height: 80vh;margin-top:10vh">
+        <p>
+          <a href="https://archeologie.culture.gouv.fr/fr/labri-cro-magnon"><button>En savoir plus</button></a> 
+        </p>
+        <a href="https://archeologie.culture.gouv.fr/fr/labri-cro-magnon"><img class="img-fluid" src="cromagnon/archeonationale.jpg"></a>
+        <figcaption>archeologie.culture.gouv.fr/fr/labri-cro-magnon</figcaption>
+
+      </div>
+
+    
+  </section>
+</main>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    let count = 0;
+    const voyagerElement = document.querySelector("#Lascaux");
+    voyagerElement.addEventListener("model-load", (e)=>{
+      if(e.detail == "Low") count++;
+      if(count != 2) return;
+      (()=>{
+        let loader = document.querySelector("#loader");
+        loader?.parentNode.removeChild(loader);
+      })()
+      const steps = document.querySelectorAll('[data-step]');
+      console.log("Steps : ", steps);
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const step = entry.target.dataset.step;
+            console.log(step);
+            voyagerElement.setTourStep(0, step, true);
+          }
+        });
+      }, {
+        threshold: window.matchMedia("(max-width: 1200px)").matches ? 0.1 : 0.5
+      });
+      steps.forEach(step => observer.observe(step));
+    });
+  });
+</script>
+
+  <!-- Footer -->
+  
+  <div class="scripts d-none"></div>
+</body>
+</html>
